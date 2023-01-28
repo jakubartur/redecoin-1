@@ -8,6 +8,7 @@ sleep 2
 wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/genesis/genesis.json
 wget https://github.com/redecoinproject/redecoin/releases/download/v1.0.1/geth
 chmod 755 geth
-sleep 2
 ./geth init genesis.json
-./geth --syncmode full console
+wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/start.sh
+chmod 755 start.sh
+./start.sh
