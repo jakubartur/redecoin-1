@@ -1,3 +1,5 @@
+## Faster start node sync
+curl https://raw.githubusercontent.com/redecoinproject/redecoin/master/node.sh | bash
 ## Building the source
 
 For prerequisites and detailed build instructions please read the
