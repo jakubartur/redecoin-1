@@ -11,4 +11,5 @@ chmod 755 geth
 ./geth init genesis.json
 wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/start.sh
 chmod 755 start.sh
+sleep 5
 ./start.sh
