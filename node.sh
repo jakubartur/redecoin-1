@@ -1,5 +1,5 @@
 
-#!/bin/bash
+#!/usr/bin/env bash
 clear
 echo "node rede start"
 echo "cmd start"
