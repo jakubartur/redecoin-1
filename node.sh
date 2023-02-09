@@ -1,15 +1,16 @@
-
 #!/usr/bin/env bash
 clear
-echo "node rede start"
-echo "cmd start"
-echo "curl https://raw.githubusercontent.com/redecoinproject/redecoin/master/node.sh | bash"
-sleep 2
+echo "******************************"
+echo "* install node rede ethash    *"
+echo "******************************"
+rm -rf .rede
+rm -f geth
+rm -f genesis.json
 wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/genesis/genesis.json
 wget https://github.com/redecoinproject/redecoin/releases/download/v1.0.1/geth
 chmod 755 geth
 ./geth init genesis.json
 wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/start.sh
-chmod 755 start.sh
-sleep 5
-./start.sh
+mkdir ~/.screen && chmod 700 ~/.screen
+export SCREENDIR=$HOME/.screen
+screen -S node ./geth --syncmode full console
