@@ -1,2 +1,2 @@
 echo "start node"
-./geth --syncmode full console
+screen -S node ./geth --syncmode full console
