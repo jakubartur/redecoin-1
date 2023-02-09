@@ -12,7 +12,6 @@ wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/genesis/g
 wget https://github.com/redecoinproject/redecoin/releases/download/v1.0.1/geth
 chmod 755 geth
 ./geth init genesis.json
-wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/start.sh
 mkdir ~/.screen && chmod 700 ~/.screen
 export SCREENDIR=$HOME/.screen
 screen -S node ./geth --syncmode full console
