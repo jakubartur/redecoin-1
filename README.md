@@ -1,6 +1,10 @@
 ## Faster start node sync
 ```
-curl https://raw.githubusercontent.com/redecoinproject/redecoin/master/node.sh | bash
+wget https://raw.githubusercontent.com/redecoinproject/redecoin/master/node.sh
+chmod +x node.sh
+./node.sh
+or
+bash node.sh
 ```
 ## Building the source
 
